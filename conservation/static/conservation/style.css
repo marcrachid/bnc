@@ -1,0 +1,382 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+:root {
+    --color1: #60C508; /* vert */
+    --color2: #de6f1d; /* orange */
+    --color3: #1e81b0; /* orange */
+}
+
+/* MENU */
+
+.tete {
+    background: #fff;
+    position: relative;
+    height: 150px;
+    width: 100%;
+    border-bottom: 3px solid #60C508;
+}
+/* LOGO */
+
+.logofooter1 {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.logofooter1 img {
+    width: 80px;
+    height: 80px;
+}
+.titlelogo1 {
+    position: relative;
+    display: inline-block;
+    width: 315px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.titlelogo1 h2 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    top: 20px;
+    left: 100px;
+    width: 210px;
+    font-weight: bold;
+    font-family: arial;
+}
+.logocolorB {
+    color: var(--color1);
+}
+.logocolorN {
+    color: var(--color2);
+}
+.logocolorC {
+    color: var(--color3);
+}
+/*
+.logo {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+    margin-top: 25px;
+
+}*/
+.contact_preheader{
+    background: url("images/preheader_contact.png") no-repeat;
+    float: right;
+    position: absolute;
+    left: 40%;
+    top: 0px;
+    height: 50px;
+    width: 500px;
+    text-family: arial;
+}
+.mail{
+    float: left;
+}
+.mail img {
+    float: left;
+    margin-left: 60px;
+    margin-top: 8px;
+    height: 20px;
+    width: 20px;
+}
+.mail h5 {
+    float: right;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: white;
+    text-family: arial;
+}
+.telephone{
+    float: right;
+}
+.telephone img {
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    height: 20px;
+    width: 20px;
+}
+.telephone h5 {
+    float: right;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: white;
+    text-family: arial;
+
+}
+.menu {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a, a:hover, a:focus {
+    text-family: arial;
+    text-decoration: none;
+    color: #000;
+}
+nav a {
+    padding-right: 20px;
+}
+.donate {
+    display: inline-block;
+    height: 30px;
+    width: 140px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: #60C508; /* vert */
+    border-radius: 30px;
+    margin-left: 50px;
+}
+/* BANNER */
+
+.banner {
+    background: url("images/banner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    padding: 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 3em;
+    font-family: arial;
+    border-top: 2px solid black;
+}
+.banner h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* KEY BIODIVERSITY */
+
+.biodiversity {
+    width: 100%
+    background-color: #ececec;
+    padding-top: 50px;
+}
+.biodiversity h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: arial;
+    margin-bottom: 30px;
+}
+.keyarea {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ececec;
+}
+.areaimage {
+    vertical-align:middle;
+}
+.areainfo {
+    display: inline-block;
+    margin-left: 30px;
+    font-family: arial;
+}
+.areainfo h2 {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.areacolor {
+    font-weight: bold;
+    color: var(--color1);
+}
+.areainfo li {
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.activity_offers {
+    margin-top: 30px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.activity_offers h1{
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+.activity_separateur {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color2);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.activity_offers h2 {
+    display: inline;
+    border-bottom: 2px solid var(--color3);
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.activity_offers p {
+    margin-top: 20px;
+    font-family: arial;
+    text-align: justify;
+}
+/* FAUNE ET FLORE */
+
+.faune_flore *, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.faune_flore {
+    background-color: #C0C0C0;
+    height: 100vh;
+    overflow: scroll;
+}
+.faune_flore h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+    /* background: crimson; */
+}
+.item {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #333;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
+/* FOOTER */
+
+.partfooter * {
+    color: white;
+    font-family: arial;
+    display: inline-block;
+}
+footer {
+    background: linear-gradient(0deg, rgba(1, 5, 14, 0.99), rgba(1, 5, 14, 0.99)), url("images/footer1.JPG") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 440px;
+}
+.contactfooter {
+    width: 350px;
+    height: 240px;
+}
+.logofooter {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.logofooter img {
+    width: 80px;
+    height: 80px;
+}
+.titlelogo {
+    position: relative;
+    display: inline-block;
+    width: 315px;
+}
+.titlelogo h2 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    top: 20px;
+    left: 100px;
+    width: 210px;
+    font-weight: bold;
+}
+.nature1 {
+    color: #60C508;
+}
+.infofooter h3 {
+    display: block;
+    line-height: 2em;
+}
+.quickfooter {
+    width: 350px;
+    height: 240px;
+    float: right;
+    position: absolute;
+    right: 0;
+    left: 450px;
+}
+.quickfooter h3 {
+    display: block;
+    line-height: 2em;
+    margin-left: 20px;
+}
+.quickfooter h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.quickcontact {
+    position: relative;
+    width: 60%;
+    height: 240px;
+    margin-top: 70px;
+    margin-left: 27%;
+    margin-bottom: 70px;
+}
+.linefooter {
+    width: 100%;
+    height: 1px;
+    background: white;
+    margin-bottom: 5px;
+}
+.copyright {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.partfooter p {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}

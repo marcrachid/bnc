@@ -1,0 +1,470 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+:root {
+    --color1: #60C508; /* vert */
+    --color2: #de6f1d; /* orange */
+    --color3: #1e81b0; /* orange */
+}
+
+/* MENU */
+
+.tete {
+    background: #fff;
+    position: relative;
+    height: 150px;
+    width: 100%;
+    border-bottom: 3px solid #60C508;
+}
+/* LOGO */
+
+.logofooter1 {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.logofooter1 img {
+    width: 80px;
+    height: 80px;
+}
+.titlelogo1 {
+    position: relative;
+    display: inline-block;
+    width: 315px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.titlelogo1 h2 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    top: 20px;
+    left: 100px;
+    width: 210px;
+    font-weight: bold;
+    font-family: arial;
+}
+.logocolorB {
+    color: var(--color1);
+}
+.logocolorN {
+    color: var(--color2);
+}
+.logocolorC {
+    color: var(--color3);
+}
+/*
+.logo {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+    margin-top: 25px;
+
+}*/
+.contact_preheader{
+    background: url("images/preheader_contact.png") no-repeat;
+    float: right;
+    position: absolute;
+    left: 40%;
+    top: 0px;
+    height: 50px;
+    width: 500px;
+    text-family: arial;
+}
+.mail{
+    float: left;
+}
+.mail img {
+    float: left;
+    margin-left: 60px;
+    margin-top: 8px;
+    height: 20px;
+    width: 20px;
+}
+.mail h5 {
+    float: right;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: white;
+    text-family: arial;
+}
+.telephone{
+    float: right;
+}
+.telephone img {
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    height: 20px;
+    width: 20px;
+}
+.telephone h5 {
+    float: right;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: white;
+    text-family: arial;
+
+}
+.menu {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a, a:hover, a:focus {
+    text-family: arial;
+    text-decoration: none;
+    color: #000;
+}
+nav a {
+    padding-right: 20px;
+}
+.donate {
+    display: inline-block;
+    height: 30px;
+    width: 140px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: #60C508; /* vert */
+    border-radius: 30px;
+    margin-left: 50px;
+}
+/* BANNER */
+
+.banner {
+    background: url("images/banner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    padding: 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 3em;
+    font-family: arial;
+    border-top: 2px solid black;
+}
+.banner h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* ECOTOURISM */
+
+.eco-tourism {
+    display: block;
+    width: 100%;
+    height: 1300px;
+    background: #f9f9f9;
+    font-family: arial;
+    padding-top: 30px;
+}
+.slid-photo {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    height: 200px;
+}
+.slid1 {
+    width: 20%;
+    height: 200px;
+    float: left;
+    margin-left:4%;
+    border-radius: 50%;
+    border: 1px solid #242424;
+}
+.slid2 {
+    width: 20%;
+    height: 200px;
+    float: right;
+    margin-right:4%;
+    border-radius: 50%;
+    border: 1px solid #242424;
+}
+
+.eco-content {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.eco-offers {
+    display: inline-block;
+    float: left;
+    width: 68%;
+}
+.eco-offers p {
+    font-family: Arial;
+    text-align: justify;
+}
+/* section 4 model n°2 ecotourism */
+.circuitv2 {
+    width: 80%;
+    height: 248px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.circuitv2img {
+    float: left;
+    width: 54%;
+}
+.image2 img {
+    width: 100%;
+}
+.circuitv2text {
+    padding-left: 7px;
+    float: right;
+    width: 46%;
+    box-sizing: border-box;
+}
+.circuitv2text h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: arial;
+}
+.circuitv2text p {
+    width: 100%;
+    height: 110px;
+    font-family: arial;
+    color: #62615f;
+    overflow: hidden;
+    text-align: left;
+}
+.joinnow2 {
+    display: inline-block;
+    width: 90%;
+    margin-top: 23px;
+}
+.textlearn2 {
+    float: left;
+    background: white;
+    border: 3px solid #62615f;
+    border-radius: 7px;
+    text-align: center;
+    width: 44%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: arial;
+    font-weight: bold;
+}
+.textjoin2 {
+    float: right;
+    color: white;
+    background: #292728;
+    border: 3px solid #292728;
+    border-radius: 7px;
+    text-align: center;
+    width: 37%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: arial;
+    font-weight: bold;
+}
+.eco-filtre {
+    display: inline-block;
+    float: right;
+    width: 25%;
+}
+/*** SEARCH ***/
+.part-search {
+    width: 100%;
+}
+#searchbox {
+    background: #d8d8d8;
+    border: 4px solid #e8e8e8;
+    padding: 20px 10px;
+    width: 250px;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+#searchbox input[type="text"] {
+    background: url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 6px #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 65%;
+    padding: 8px 15px 8px 30px;
+}
+
+#button-submit {
+    background: #6A6F75;
+    border-width: 0px;
+    padding: 9px 0px;
+    width: 33%;
+    cursor: pointer;
+    font: bold 12px Arial, Helvetica;
+    color: #fff;
+    text-shadow: 0 1px 0 #555;
+}
+
+#button-submit:hover {
+    background: #4f5356;
+}
+
+#button-submit:active {
+    background: #5b5d60;
+    outline: none;
+}
+
+#button-submit::-moz-focus-inner {
+    border: 0;
+}
+/*** FIN SEARCH ***/
+.part-categories {
+    width: 100%;
+}
+.part-categories h1{
+    margin-top: 20px;
+    font-family: arial;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.part-categories div{
+    width:50px;
+    height: 4px;
+    background: var(--color1);
+    margin-bottom: 30px;
+}
+.part-categories h2{
+    font-family: arial;
+    color: 	#696969;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+.partfooter * {
+    color: white;
+    font-family: arial;
+    display: inline-block;
+}
+footer {
+    background: linear-gradient(0deg, rgba(1, 5, 14, 0.99), rgba(1, 5, 14, 0.99)), url("images/footer1.JPG") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 440px;
+}
+.contactfooter {
+    width: 350px;
+    height: 240px;
+}
+.logofooter {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.logofooter img {
+    width: 80px;
+    height: 80px;
+}
+.titlelogo {
+    position: relative;
+    display: inline-block;
+    width: 315px;
+}
+.titlelogo h2 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    top: 20px;
+    left: 100px;
+    width: 210px;
+    font-weight: bold;
+}
+.nature1 {
+    color: #60C508;
+}
+.infofooter h3 {
+    display: block;
+    line-height: 2em;
+}
+.quickfooter {
+    width: 350px;
+    height: 240px;
+    float: right;
+    position: absolute;
+    right: 0;
+    left: 450px;
+}
+.quickfooter h3 {
+    display: block;
+    line-height: 2em;
+    margin-left: 20px;
+}
+.quickfooter h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.quickcontact {
+    position: relative;
+    width: 60%;
+    height: 240px;
+    margin-top: 70px;
+    margin-left: 27%;
+    margin-bottom: 70px;
+}
+.linefooter {
+    width: 100%;
+    height: 1px;
+    background: white;
+    margin-bottom: 5px;
+}
+.copyright {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.partfooter p {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}

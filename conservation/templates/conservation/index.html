@@ -1,0 +1,164 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conservation</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="{% static 'conservation/scripts.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'conservation/style.css' %}">
+</head>
+<body>
+
+    <!-- MENU --->
+
+    <header>
+        <div class="tete">
+            <div class="titlelogo1">
+                <div class="logofooter1">
+                    <img src="{% static 'conservation/images/logo_BNC.jpg' %}">
+                </div>
+                <h2><span class="logocolorB">B</span>OBAOMBY <br><span class="logocolorN">N</span>ATURE <br><span class="logocolorC">C</span>ONSERVATION</h2>
+            </div>
+            <div class="contact_preheader">
+                <div class="mail">
+                    <img src="{% static 'conservation/images/enveloppe.png' %}">
+                    <h5>bncoservation@hotmail.com</h5>
+                </div>
+                <div class="telephone">
+                    <img src="{% static 'conservation/images/appel_telephonique.png' %}">
+                    <h5>bncoservation@hotmail.com</h5>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="{% url 'home:index' %}">Home</a>
+                    <a href="{% url 'about:index' %}">About</a>
+                    <a href="{% url 'ecotourism:index' %}">Ecotourism</a>
+                    <a href="{% url 'conservation:index' %}">Conservation</a>
+                    <a href="{% url 'contactus:index' %}">Contact us</a>
+                    <a href="/donate" class="donate">DONATE NOW!</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- BANNER -->
+    <div class="banner">
+        <h1>CONSERVATION</h1>
+        <h2><a href="{% url 'home:index' %}">HOME</a> / <a href="{% url 'conservation:index' %}">CONSERVATION</a></h2>
+    </div>
+    <!-- KEY BIODIVERSITY -->
+    <div class="biodiversity">
+        <h1>KEY BIODIVERSITY AREA</h1>
+        <div class="keyarea">
+            <table>
+                <tr>
+                    <td style="width:40%" class="areaimage"><img style="width:100%" src="{% static 'conservation/images/keyarea.JPG' %}"></td>
+                    <td style="width:53%">
+                        <div class="areainfo">
+                            <h2>This area is known for Biodiversity richness which is endemic to Madagascar. </h2>
+                            <ul>
+                                <li>The site is habitat of the <span class="areacolor">Fruits Bats</span>, Madagascar flying fox which is
+                                    classified as Vulnerable in IUCN Red List. The existence of fruit bats is
+                                    ecologically significant as they act as a major component in seed dispersal,
+                                    hence help in the reforestation.</li>
+                                <li>There is a large troops of <span class="areacolor">crowned lemurs</span> (Eulemur coronatus )which is classiﬁed
+                                    as Endangered (EN) in the IUCN Red List. They are an essential part of
+                                    functioning ecosystem, as they are directly related to the structure and composition
+                                    of habitats by their role as seed dispersers (Brewer and Rejmanek,1999), pollinators
+                                    (Jansen et al.1981; Fleming and Sosa,1994;Carthew and Goldingay,1995)</li>
+                                <li>The project site has an important 2km of <span class="areacolor">Mangrove forest</span>. The main species of
+                                    mangrove trees there are Avicennia marina), Rhizophora mucronata), Sonneratia alba),
+                                    Bruguiera gymnorrhiza), and Ceriops tagal). The Mangrove forest is also where the
+                                    habitants of Ampombofofo collect crabs and honey.</li>
+                                <li>The site is habitat of the Big <span class="areacolor">Baobab</span> which is endemic to Madagascar, such as
+                                    Andasonia Madagascarensis. For the local communities Baobabs are considered as sacred tree</li>
+                                <li>There are 63 <span class="areacolor">bird</span> species, where  some of them are classiﬁed as least Concern
+                                    in IUCN red list and some are classified as) and  among these 63 species, 32 species
+                                    are either endemic to Madagascar or endemic to Indian Ocean region.</li>
+                                <li>The site is habitat of 31 <span class="areacolor">butterfly</span> species including the (Pharmacofagus Antennor)
+                                    which is referred to as indication of healthy environment which is rich in medicinal plants</li>
+                                <li>The site is habitat of 10 <span class="areacolor">amphibian</span> species , 39 <span class="areacolor">reptile</span> species  including the
+                                    big chameleon fulcifer pardalis and the snake Langaha Madagascarensis, Brookesia stumpffi
+                                    which is classiﬁed as Vulnerable in IUCN Red list  and one of the project beach  is a
+                                    place where the Green sea <span class="areacolor">turtles</span> (Chelonia mydas) lay eggs which classiﬁed as Endangered
+                                    on the IUCN Red list</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <div class="activity_offers">
+        <h1>ACTIVITIES AND OFFERS</h1>
+        <div class="activity_separateur"></div>
+        <h2>RESEARCH AND DOCUMENTATION</h2>
+        <p>The Ampombofofo site has at least 63 species of birds and a large group of Eulemur Coronatus.
+            There will also be a possibility of visit (Birds watch and Lemurs watch). You can carry out research
+            and studies in anthropology, primatology, ornithology and botany.</p>
+    </div>
+        <!--    FAUNE ET FLORE -->
+    <div class="faune_flore">
+        <h1>FAUNE ET FLORE</h1>
+        <div class="galerie">
+
+            <div class="item"><img src="{% static 'conservation/images/ff1.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff2.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff3.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff4.jpg' %}"></div>
+
+            <div class="item"><img src="{% static 'conservation/images/ff5.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff6.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff7.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff8.jpg' %}"></div>
+
+            <div class="item"><img src="{% static 'conservation/images/ff9.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff10.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff11.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff12.jpg' %}"></div>
+
+            <div class="item"><img src="{% static 'conservation/images/ff13.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff14.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff15.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff16.jpg' %}"></div>
+
+            <div class="item"><img src="{% static 'conservation/images/ff17.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff18.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff19.jpg' %}"></div>
+            <div class="item"><img src="{% static 'conservation/images/ff20.jpg' %}"></div>
+
+        </div>
+    </div>
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="partfooter">
+            <div class="quickcontact">
+                <div class="contactfooter">
+                    <div class="titlelogo">
+                        <div class="logofooter">
+                            <img src="{% static 'conservation/images/logo_BNC.jpg' %}">
+                        </div>
+                        <h2>BOBAOMBY <br><span class="nature1">NATURE CONSERVATION</span></h2>
+                    </div>
+                    <div class="infofooter">
+                        <h3>BP 61 Cercle Messe, Place Kabary <br> ANTSIRANANA 201, MADAGASCAR</h3>
+                        <h3>+261 32 41 649 86 / +261 32 70 544 68 </h3>
+                        <h3>bnconseravtion@hotmail.com</h3>
+                    </div>
+                </div>
+                <div class="quickfooter">
+                    <h1>QUICK LINKS</h1>
+                    <h3><a href="{% url 'home:index' %}">Home</a></h3>
+                    <h3><a href="{% url 'about:index' %}">About</a></h3>
+                    <h3><a href="{% url 'ecotourism:index' %}">Ecotourism</a></h3>
+                    <h3><a href="{% url 'conservation:index' %}">Conservation</a></h3>
+                    <h3><a href="{% url 'contactus:index' %}">Contact us</a></h3>
+                    <h3><a href="/donate">DONATE</a></h3>
+                </div>
+            </div>
+            <div class="linefooter"></div>
+            <p>Copyright 2021 <span class="copyright">©</span> Bobaomby Nature Conservation</p>
+        </div>
+    </footer>
+</body>
+</html>

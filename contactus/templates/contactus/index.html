@@ -1,0 +1,163 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <script src="{% static 'contactus/scripts.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'contactus/style.css' %}">
+</head>
+<body>
+
+    <!-- MENU --->
+
+    <header>
+        <div class="tete">
+            <div class="titlelogo1">
+                <div class="logofooter1">
+                    <img src="{% static 'contactus/images/logo_BNC.jpg' %}">
+                </div>
+                <h2><span class="logocolorB">B</span>OBAOMBY <br><span class="logocolorN">N</span>ATURE <br><span class="logocolorC">C</span>ONSERVATION</h2>
+            </div>
+            <div class="contact_preheader">
+                <div class="mail">
+                    <img src="{% static 'contactus/images/enveloppe.png' %}">
+                    <h5>bncoservation@hotmail.com</h5>
+                </div>
+                <div class="telephone">
+                    <img src="{% static 'contactus/images/appel_telephonique.png' %}">
+                    <h5>bncoservation@hotmail.com</h5>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="{% url 'home:index' %}">Home</a>
+                    <a href="{% url 'about:index' %}">About</a>
+                    <a href="{% url 'ecotourism:index' %}">Ecotourism</a>
+                    <a href="{% url 'conservation:index' %}">Conservation</a>
+                    <a href="{% url 'contactus:index' %}">Contact us</a>
+                    <a href="/donate" class="donate">DONATE NOW!</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <h1>CONTACT US</h1>
+        <h2><a href="{% url 'home:index' %}">HOME</a> / <a href="{% url 'contactus:index' %}">CONTACT US</a></h2>
+    </div>
+
+    <!-- OUR ADDRESS -->
+    <div class="contact_us" style="width:100%">
+        <div class="address_image">
+            <div class="address">
+                <h1>OUR ADDRESS</h1>
+                <table style="font-family: arial;">
+                    <tr style="padding-bottom:10px;display:inline-block;">
+                        <td style="width:5%"><i style="width:100%" class="fas fa-map-marker-alt"></i></td>
+                        <td style="width:90%"><p>BP 61 Cercle Messe, Place Kabary, ANTSIRANANA 201, MADAGASCAR</p></td>
+                    </tr>
+                    <tr style="padding-bottom:10px;display:inline-block;">
+                        <td style="width:5%"><i style="width:100%"  class="fas fa-phone-alt"></i></td>
+                        <td style="width:90%;padding-left:10px;"><p>+261 32 41 649 86 / +261 32 70 544 68</p></td>
+                    </tr>
+                    <tr style="padding-bottom:10px;display:inline-block;">
+                        <td style="width:5%"><i style="width:100%" class="far fa-envelope"></i></td>
+                        <td style="width:90%;padding-left:10px;"><p>bnconseravtion@hotmail.com</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image_contact">
+                <table>
+                    <tr>
+                        <td style="width:100%"><img style="width:100%" src="{% static 'contactus/images/ff5.JPG' %}"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- FORMULA ET MAP -->
+        <div class="form_map">
+            <div class="map" style="width:45%;float:left;">
+                <h1>OUR LOCATION ON MAPE</h1>
+                <table>
+                    <tr>
+                        <td style="width:100%"><img style="width:100%" src="{% static 'contactus/images/carte.png' %}"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="formula" style="width:50%;float:right;">
+                <h1>SEND MESSAGE</h1>
+                <form>
+                  <h1>Contact us</h1>
+                  <div class="separation"></div>
+                  <div class="corps-formulaire">
+                    <div class="gauche">
+                      <div class="groupe">
+                        <label>Last name and first name</label>
+                        <input type="text" autocomplete="off" />
+                        <i class="fas fa-user"></i>
+                      </div>
+                      <div class="groupe">
+                        <label>Your email address</label>
+                        <input type="text" autocomplete="off" />
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="groupe">
+                        <label>Your phone</label>
+                        <input type="text" autocomplete="off" />
+                        <i class="fas fa-mobile"></i>
+                      </div>
+                    </div>
+
+                    <div class="droite">
+                      <div class="groupe">
+                        <label>Message</label>
+                        <textarea placeholder="Enter here..."></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pied-formulaire" align="center">
+                    <button>SEND</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="partfooter">
+            <div class="quickcontact">
+                <div class="contactfooter">
+                    <div class="titlelogo">
+                        <div class="logofooter">
+                            <img src="{% static 'contactus/images/logo_BNC.jpg' %}">
+                        </div>
+                        <h2>BOBAOMBY <br><span class="nature1">NATURE CONSERVATION</span></h2>
+                    </div>
+                    <div class="infofooter">
+                        <h3>BP 61 Cercle Messe, Place Kabary <br> ANTSIRANANA 201, MADAGASCAR</h3>
+                        <h3>+261 32 41 649 86 / +261 32 70 544 68 </h3>
+                        <h3>bnconseravtion@hotmail.com</h3>
+                    </div>
+                </div>
+                <div class="quickfooter">
+                    <h1>QUICK LINKS</h1>
+                    <h3><a href="{% url 'home:index' %}">Home</a></h3>
+                    <h3><a href="{% url 'about:index' %}">About</a></h3>
+                    <h3><a href="{% url 'ecotourism:index' %}">Ecotourism</a></h3>
+                    <h3><a href="{% url 'conservation:index' %}">Conservation</a></h3>
+                    <h3><a href="{% url 'contactus:index' %}">Contact us</a></h3>
+                    <h3><a href="/donate">DONATE</a></h3>
+                </div>
+            </div>
+            <div class="linefooter"></div>
+            <p>Copyright 2021 <span class="copyright">©</span> Bobaomby Nature Conservation</p>
+        </div>
+    </footer>
+</body>
+</html>

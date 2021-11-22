@@ -1,0 +1,247 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="{% static 'about/scripts.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'about/style.css' %}">
+</head>
+<body>
+
+    <!-- MENU --->
+
+    <header>
+        <div class="tete">
+            <div class="titlelogo1">
+                <div class="logofooter1">
+                    <img src="{% static 'about/images/logo_BNC.jpg' %}">
+                </div>
+                <h2><span class="logocolorB">B</span>OBAOMBY <br><span class="logocolorN">N</span>ATURE <br><span class="logocolorC">C</span>ONSERVATION</h2>
+            </div>
+            <div class="contact_preheader">
+                <div class="mail">
+                    <img src="{% static 'about/images/enveloppe.png' %}">
+                    <h5>bncoservation@hotmail.com</h5>
+                </div>
+                <div class="telephone">
+                    <img src="{% static 'about/images/appel_telephonique.png' %}">
+                    <h5>bncoservation@hotmail.com</h5>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="{% url 'home:index' %}">Home</a>
+                    <a href="{% url 'about:index' %}">About</a>
+                    <a href="{% url 'ecotourism:index' %}">Ecotourism</a>
+                    <a href="{% url 'conservation:index' %}">Conservation</a>
+                    <a href="{% url 'contactus:index' %}">Contact us</a>
+                    <a href="/donate" class="donate">DONATE NOW!</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- BANNER -->
+    <div class="banner">
+        <h1>ABOUT</h1>
+        <h2><a href="{% url 'home:index' %}">HOME</a> / <a href="{% url 'about:index' %}">ABOUT</a></h2>
+    </div>
+    <div class="about_navigation">
+        <table>
+            <tr>
+                <td style="width:9%"><a href="#accommodation">ACCOMMODATION</a></td>
+                <td style="width:9%"><a href="#restoration">RESTORATION</a></td>
+                <td style="width:9%"><a href="#water">WATER</a></td>
+                <td style="width:17%"><a href="#mission">VISION & MISSION</a></td>
+            </tr>
+        </table>
+        <table>
+             <tr>
+                <td style="width:11%"><a href="#electricity">ELECTRICITY</a></td>
+                <td style="width:11%"><a href="#accessibility">ACCESSIBILITY</a></td>
+                <td style="width:11%"><a href="#temperature">TEMPERATURE</a></td>
+                <td style="width:11%"><a href="#teams">TEAMS</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="aboutete">
+        <div class="aboutimg">
+            <img src="{% static 'about/images/about1.JPG' %}">
+        </div>
+        <div class="aboutintro">
+            <h1>WE ARE THINK <span class="headintro">AHEAD</span></h1>
+            <p>BNC (Bobaomby Nature Conservation) is a Non-profit organization registered in Madagascar which is working
+                in the province of Antsiranana, the northern tip of Madagascar. Our work with local communities is
+                focusing on the small community of the Key Biodiversity area of Ampombofofo on CONSERVATION
+                and ECOTOURISM.</p>
+            <h2>- Ecotourism</h2>
+            <h2>- Conservation</h2>
+            <h3>Download BNC Brochure</h3>
+        </div>
+    </div>
+    <!--  VISION MISSION INFRASTRUCTURE -->
+    <div class="vision_mission" id="mission">
+        <div class="vision">
+            <h1>VISION</h1>
+            <h2>Protect the Environment with the consideration of the well-being of the local people</h2>
+        </div>
+        <div class="mission">
+            <h1>MISSION</h1>
+            <h2>Develop a community ecotourism activity that is beneficial for the Conservation of Environment
+            and for the improvement of the communities’ life standards</h2>
+        </div>
+    </div>
+    <div class="infrastructure">
+        <h1>INFRASTRUCTURE</h1>
+        <h2 id="accommodation">ACCOMMODATION</h2>
+        <p>Faithful to the philosophy of community eco-tourism. The tents well sheltered under a Hangard in our camp
+            in the heart of the village. It is a place of discovery and enrichment. Contemplate this landscape rich in
+            biodiversity and its sumptuous sunset beyond the village. And evenings animated by folk music.</p>
+        <table>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/hebergement1.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/hebergement2.JPG' %}"></td>
+            </tr>
+        </table>
+        <h2 id="restoration">RESTORATION</h2>
+        <p>Every morning, hearty breakfasts will give you the catch for the day: hot drinks, pancakes, French toast,
+            fruit plates, and Malagasy-style breakfasts. Lunch with our menus typical of the region and modern cuisine,
+            at the camp or picnic during the visits. Composed of a starter, a main course and a dessert. And every
+            evening, meals full of flavors and delicacies to awaken your taste buds.</p>
+        <table>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/restoration1.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/restoration2.JPG' %}"></td>
+            </tr>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/restoration3.JPG' %}"></td>
+            </tr>
+        </table>
+        <h2 id="water">WATER, TOILET AND WC</h2>
+        <p>Respecting the standards, in hard, English chair, with the fresh air of the forest. Spacious shower.</p>
+        <table>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/water1.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/water2.JPG' %}"></td>
+            </tr>
+        </table>
+        <h2 id="electricity">ELECTRICITY</h2>
+        <p>We respect the concept and the way of life of the villagers, using clean energy, which is solar panels.
+            Just for charging cameras, computers, and phones, and lights.</p>
+        <table>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/electricity1.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/electricity2.JPG' %}"></td>
+            </tr>
+        </table>
+        <h2 id="accessibility">ACCESSIBILITY</h2>
+        <p>As in many tourist sites in Madagascar, the accessibility condition at the site level is not always easy,
+            especially during the rainy season. That being said, potential visitors to this site will therefore be
+            passionate about hiking. The site is open year round. From December to March it is the rainy season,
+            there is a little mud, but the whole part is covered with sand, and makes the track easily accessible.
+            Good time for research and studies, as well as village integration.</p>
+        <p>From April to November is the dry season, access is easy, and a good time for all kinds of activities.
+        from Diego by boat for 1 hour 30 minutes to Ambanilanahely village, and a pleasant 1 hour hike to Anjiabe village.
+        A journey by car or quad, is 5 hours to the village of Anjiabe.</p>
+         <table>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces1.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces2.JPG' %}"></td>
+            </tr>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces3.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces4.JPG' %}"></td>
+            </tr>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces5.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces6.JPG' %}"></td>
+            </tr>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces7.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/acces8.JPG' %}"></td>
+            </tr>
+        </table>
+        <h2 id="temperature">TEMPERATURE</h2>
+        <p>During the varatraza season, it is cool, because there is wind (Monsoon) with a daytime temperature between
+            27 ° to 30 ° C, and in the evening, we have a temperature between 22 ° to 25 ° vs. During the rainy season,
+            it is hot and humid, and the temperature varies between 30 ° to 34 ° C.</p>
+        <table>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/temperature1.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/temperature2.JPG' %}"></td>
+            </tr>
+            <tr>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/temperature3.JPG' %}"></td>
+                <td style="width:50%"><img style="width:100%" src="{% static 'about/images/temperature4.JPG' %}"></td>
+            </tr>
+        </table>
+        <h1 id="teams">OUR TEAM</h1>
+        <table>
+            <tr>
+                <td style="width:16%"><img style="width:100%" src="{% static 'about/images/fanainga.JPG' %}"></td>
+                <td style="width:16%"><img style="width:100%" src="{% static 'about/images/fmfp.JPG' %}"></td>
+                <td style="width:16%"><img style="width:100%" src="{% static 'about/images/RUFFORD.JPG' %}"></td>
+                <td style="width:16%"><img style="width:100%" src="{% static 'about/images/Tanymeva.JPG' %}"></td>
+                <td style="width:16%"><img style="width:100%" src="{% static 'about/images/Ampombofofo.JPG' %}"></td>
+            </tr>
+            <tr>
+                <td style="text-align:center">FANAINGA</td>
+                <td style="text-align:center">FMFP</td>
+                <td style="text-align:center">RUFFORD</td>
+                <td style="text-align:center">TANY MEVA</td>
+                <td style="text-align:center">AMPOMBOFOFO</td>
+            </tr>
+        </table>
+    </div>
+    <div class="about_navigation">
+        <table>
+            <tr>
+                <td style="width:9%"><a href="#accommodation">ACCOMMODATION</a></td>
+                <td style="width:9%"><a href="#restoration">RESTORATION</a></td>
+                <td style="width:9%"><a href="#water">WATER</a></td>
+                <td style="width:17%"><a href="#mission">VISION & MISSION</a></td>
+            </tr>
+        </table>
+        <table>
+             <tr>
+                <td style="width:11%"><a href="#electricity">ELECTRICITY</a></td>
+                <td style="width:11%"><a href="#accessibility">ACCESSIBILITY</a></td>
+                <td style="width:11%"><a href="#temperature">TEMPERATURE</a></td>
+                <td style="width:11%"><a href="#teams">TEAMS</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="partfooter">
+            <div class="quickcontact">
+                <div class="contactfooter">
+                    <div class="titlelogo">
+                        <div class="logofooter">
+                            <img src="{% static 'about/images/logo_BNC.jpg' %}">
+                        </div>
+                        <h2>BOBAOMBY <br><span class="nature1">NATURE CONSERVATION</span></h2>
+                    </div>
+                    <div class="infofooter">
+                        <h3>BP 61 Cercle Messe, Place Kabary <br> ANTSIRANANA 201, MADAGASCAR</h3>
+                        <h3>+261 32 41 649 86 / +261 32 70 544 68 </h3>
+                        <h3>bnconseravtion@hotmail.com</h3>
+                    </div>
+                </div>
+                <div class="quickfooter">
+                    <h1>QUICK LINKS</h1>
+                    <h3><a href="{% url 'home:index' %}">Home</a></h3>
+                    <h3><a href="{% url 'about:index' %}">About</a></h3>
+                    <h3><a href="{% url 'ecotourism:index' %}">Ecotourism</a></h3>
+                    <h3><a href="{% url 'conservation:index' %}">Conservation</a></h3>
+                    <h3><a href="{% url 'contactus:index' %}">Contact us</a></h3>
+                    <h3><a href="/donate">DONATE</a></h3>
+                </div>
+            </div>
+            <div class="linefooter"></div>
+            <p>Copyright 2021 <span class="copyright">©</span> Bobaomby Nature Conservation</p>
+        </div>
+    </footer>
+</body>
+</html>
